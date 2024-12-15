@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.VisualStudio", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Korn", "Korn", "{2A3AC98A-E472-46EE-B0AD-7BB1ED6C21A8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Logger", "..\Korn.Logger\Korn.Logger\Korn.Logger.csproj", "{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.System", "..\Korn.Utils.System\Korn.Utils.System\Korn.Utils.System.csproj", "{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,8 +27,28 @@ Global
 		{BCF4041F-873F-47D5-8668-C8AEFD82DAD5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCF4041F-873F-47D5-8668-C8AEFD82DAD5}.Release|x64.ActiveCfg = Release|x64
 		{BCF4041F-873F-47D5-8668-C8AEFD82DAD5}.Release|x64.Build.0 = Release|x64
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Debug|x64.Build.0 = Debug|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Release|x64.ActiveCfg = Release|Any CPU
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA}.Release|x64.Build.0 = Release|Any CPU
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Debug|Any CPU.Build.0 = Debug|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Debug|x64.ActiveCfg = Debug|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Debug|x64.Build.0 = Debug|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Release|Any CPU.ActiveCfg = Release|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Release|Any CPU.Build.0 = Release|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Release|x64.ActiveCfg = Release|x64
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{80C8D3DC-8695-4F29-A3A3-FEEB947A9EDA} = {2A3AC98A-E472-46EE-B0AD-7BB1ED6C21A8}
+		{FDFAA979-BA60-4E9C-9D5B-759F8A18C2E5} = {2A3AC98A-E472-46EE-B0AD-7BB1ED6C21A8}
 	EndGlobalSection
 EndGlobal
