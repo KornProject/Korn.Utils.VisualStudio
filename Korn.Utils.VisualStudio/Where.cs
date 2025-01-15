@@ -8,7 +8,7 @@ public static class VSWhere
     const int TIMEOUT_SECONDS = 30;
     public static string ResolveVisualStudioPath()
     {
-        if (IsServiceInstalled)
+        if (!IsServiceInstalled)
             throw new KornError([
                 "VSWhere->ResolveVisualStudioPath:",
                 "The vswhere service is not installed. Apparently, you do not have Visual Studio installed."
