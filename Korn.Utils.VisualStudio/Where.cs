@@ -9,10 +9,10 @@ public static class VSWhere
     public static string ResolveVisualStudioPath()
     {
         if (!IsServiceInstalled)
-            throw new KornError([
+            throw new KornError(
                 "VSWhere->ResolveVisualStudioPath:",
                 "The vswhere service is not installed. Apparently, you do not have Visual Studio installed."
-            ]);
+            );
 
         var commandLine = new CommandLine(
             host: VSWHERE_PATH,
@@ -29,18 +29,18 @@ public static class VSWhere
         {
             Thread.Sleep(1);
             if ((DateTime.Now - startTime).TotalSeconds > TIMEOUT_SECONDS)
-                throw new KornError([
+                throw new KornError(
                     "VSWhere->ResolveVisualStudioPath:",
-                    "The vswhere service not responding, timeout.",
-                ]);
+                    "The vswhere service not responding, timeout."
+                );
         }
 
         if (result is null)
-            throw new KornError([
+            throw new KornError(
                 "VSWhere->ResolveVisualStudioPath:",
                 "The vswhere service finished with no result.",
                 "This indicates that the vswhere service is failing or that you don't have Visual Studio installed."
-            ]);
+            );
 
         return result;
 
