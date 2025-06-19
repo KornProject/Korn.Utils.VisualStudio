@@ -1,4 +1,6 @@
-﻿namespace Korn.Utils.VisualStudio;
+﻿using Korn.Logger;
+
+namespace Korn.Utils.VisualStudio;
 public static class VSWhere
 {
     const string VSWHERE_PATH = @"C:\Program Files (x86)\Microsoft Visual Studio\Installer\vswhere.exe";
